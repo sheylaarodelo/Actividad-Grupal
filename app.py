@@ -14,7 +14,13 @@ def dividir(a, b):
         return "Error: no se puede dividir por cero"
     return a / b
 
-st.title("Calculadora Básica")
+st.title("--------------CALCULADORA-------------")
+nombre = st.text_input("Ingresa tu nombre:")
+
+if nombre:
+    st.write(f"HOLA, {nombre}, ¡GRACIAS POR USAR NUESTRA CALCULADORA!")
+    st.image("FLORK.jpg", caption="muñeco")
+
 
 num1 = st.number_input("Ingrese el primer número", value=0.0)
 num2 = st.number_input("Ingrese el segundo número", value=0.0)
