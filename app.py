@@ -1,4 +1,4 @@
-import streamlit as st 
+import streamlit as st  # type: ignore
 
 def sumar(a, b):
     return a + b
@@ -18,10 +18,10 @@ st.title("--------------CALCULADORA-------------")
 nombre = st.text_input("Ingresa tu nombre:")
 
 if nombre:
-    st.write(f"HOLA, {nombre}, ¡GRACIAS POR USAR NUESTRA CALCULADORA!")
+    st.write(f"HOLA {nombre}, ¡GRACIAS POR USAR NUESTRA CALCULADORA!")
     st.image("FLORK.jpg", caption="muñeco")
 
-
+st.title("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 num1 = st.number_input("Ingrese el primer número", value=0.0)
 num2 = st.number_input("Ingrese el segundo número", value=0.0)
 
