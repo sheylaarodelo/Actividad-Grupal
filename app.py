@@ -15,7 +15,7 @@ def dividir(a, b):
     return a / b
 
 st.title("--------------CALCULADORA-------------")
-nombre = st.text_input("Ingresa tu nombre:")
+nombre = st.text_input("Ingresa tu nombre: ")
 
 if nombre:
     st.write(f"HOLA {nombre}, ¡GRACIAS POR USAR NUESTRA CALCULADORA!")
